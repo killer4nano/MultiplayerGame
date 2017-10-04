@@ -11,3 +11,16 @@ D:\visual basic\MultiplayerGames\MultiplayerGames\obj\Debug\MultiplayerGames.exe
 D:\visual basic\MultiplayerGames\MultiplayerGames\obj\Debug\MultiplayerGames.xml
 D:\visual basic\MultiplayerGames\MultiplayerGames\obj\Debug\MultiplayerGames.pdb
 D:\visual basic\MultiplayerGames\MultiplayerGames\obj\Debug\WindowsApp1.frmHangman.resources
+C:\Users\kille\Desktop\Game\MultiplayerGames\bin\Debug\MultiplayerGames.exe.config
+C:\Users\kille\Desktop\Game\MultiplayerGames\bin\Debug\MultiplayerGames.exe
+C:\Users\kille\Desktop\Game\MultiplayerGames\bin\Debug\MultiplayerGames.pdb
+C:\Users\kille\Desktop\Game\MultiplayerGames\bin\Debug\MultiplayerGames.xml
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\MultiplayerGames.vbprojResolveAssemblyReference.cache
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\WindowsApp1.frmHangman.resources
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\WindowsApp1.frmMain.resources
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\MultiplayerGames.vbproj.GenerateResource.Cache
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\MultiplayerGames.vbproj.CoreCompileInputs.cache
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\MultiplayerGames.exe
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\MultiplayerGames.xml
+C:\Users\kille\Desktop\Game\MultiplayerGames\obj\Debug\MultiplayerGames.pdb

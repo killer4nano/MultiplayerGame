@@ -23,28 +23,39 @@ Partial Class frmHangman
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.cmdConnect = New System.Windows.Forms.Button()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'cmdConnect
         '
-        Me.cmdConnect.Location = New System.Drawing.Point(103, 70)
+        Me.cmdConnect.Location = New System.Drawing.Point(119, 13)
         Me.cmdConnect.Name = "cmdConnect"
         Me.cmdConnect.Size = New System.Drawing.Size(75, 23)
         Me.cmdConnect.TabIndex = 0
         Me.cmdConnect.Text = "Connect"
         Me.cmdConnect.UseVisualStyleBackColor = True
         '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(13, 13)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(100, 20)
+        Me.txtName.TabIndex = 1
+        '
         'frmHangman
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.cmdConnect)
         Me.Name = "frmHangman"
         Me.Text = "Hangman"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents cmdConnect As Button
+    Friend WithEvents txtName As TextBox
 End Class
