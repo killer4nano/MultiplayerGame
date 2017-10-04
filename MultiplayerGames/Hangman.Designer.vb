@@ -24,6 +24,7 @@ Partial Class frmHangman
     Private Sub InitializeComponent()
         Me.cmdConnect = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
+        Me.lblReply = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cmdConnect
@@ -42,11 +43,20 @@ Partial Class frmHangman
         Me.txtName.Size = New System.Drawing.Size(100, 20)
         Me.txtName.TabIndex = 1
         '
+        'lblReply
+        '
+        Me.lblReply.AutoSize = True
+        Me.lblReply.Location = New System.Drawing.Point(64, 93)
+        Me.lblReply.Name = "lblReply"
+        Me.lblReply.Size = New System.Drawing.Size(0, 13)
+        Me.lblReply.TabIndex = 2
+        '
         'frmHangman
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.lblReply)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.cmdConnect)
         Me.Name = "frmHangman"
@@ -58,4 +68,5 @@ Partial Class frmHangman
 
     Friend WithEvents cmdConnect As Button
     Friend WithEvents txtName As TextBox
+    Friend WithEvents lblReply As Label
 End Class
