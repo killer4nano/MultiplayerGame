@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Net.Sockets
 Imports System.Text
+Imports System.Threading
 
 Public Class frmHangman
 
@@ -9,6 +10,7 @@ Public Class frmHangman
     Dim tcpClient As TcpClient
     Dim bw As IO.BinaryWriter
     Dim isLeader As Boolean = False
+    Private connection As Thread
 
     Private Sub frmHangman_onClose(sender As Object, e As EventArgs) Handles MyBase.Closed
         frmMain.Show()
@@ -31,24 +33,31 @@ Public Class frmHangman
         bw.Write(txtName.Text + vbCrLf)
         readMessage()
         bw.Write("hang" + vbCrLf)
-        readMessage()
-        If (isLeader) Then
-            readMessage()
-        End If
+        connection = New Thread(AddressOf ThreadTask)
+        connection.IsBackground = True
+        connection.Start()
 
     End Sub
 
-    Private Sub readMessage()
+    Private Function readMessage() As String
         Dim bytes(tcpClient.ReceiveBufferSize) As Byte
         br = New BinaryReader(tcpClient.GetStream)
         br.Read(bytes, 0, CInt(tcpClient.ReceiveBufferSize))
         messageReceived = Encoding.UTF8.GetString(bytes)
         If (messageReceived.Contains("lead")) Then
             isLeader = True
-            MsgBox("You are the leader")
-        Else
-            MsgBox(messageReceived)
         End If
+        Return messageReceived
+    End Function
 
+
+    Private Sub ThreadTask()
+        While readMessage() IsNot Nothing
+            If messageReceived.Contains("lead") Then
+                MsgBox("You are the leader of the game!")
+            ElseIf messageReceived.Contains("welcome") Then
+                MsgBox("Welcome player!")
+            End If
+        End While
     End Sub
 End Class
